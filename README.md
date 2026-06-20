@@ -1,18 +1,14 @@
-# image-encryption-pixel-manipulation
-## Task 2: Image Encryption (Pixel Manipulation)
+# Image Encryption using Pixel Manipulation
 
-### `image_encrypt.py`
+## Description
+A simple image encryption technique that modifies pixel values.
 
-```python
-from PIL import Image
+## Features
+- Reads an image
+- Manipulates RGB values
+- Saves encrypted image
 
-image = Image.open("input.jpg")
-pixels = image.load()
+## Requirements
 
-for i in range(image.size[0]):
-    for j in range(image.size[1]):
-        r, g, b = pixels[i, j]
-        pixels[i, j] = (255-r, 255-g, 255-b)
-
-image.save("encrypted.jpg")
-print("Encrypted image saved as encrypted.jpg")
+```bash
+pip install pillow
